@@ -17,8 +17,7 @@ var rootCmd = &cobra.Command{
 	Long:  `A minimal, offline-ready http response code explorer built with love by valxntine.`,
 	Args:  cobra.ExactArgs(1),
 	Run: func(cmd *cobra.Command, args []string) {
-		statuses := codes.NewStatusCodes()
-		v, ok := statuses[args[0]]
+		v, ok := codes.StatusCodes[args[0]]
 		if !ok {
 			fmt.Fprintln(os.Stdout, center(border, 50))
 			fmt.Fprintln(os.Stdout, center(blankBorder, 50))

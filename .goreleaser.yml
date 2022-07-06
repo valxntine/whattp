@@ -1,0 +1,30 @@
+builds:
+  - binary: mediumautopost
+    goos:
+      - darwin
+      - linux
+    goarch:
+      - amd64
+      - arm64
+    env:
+      - CGO_ENABLED=0
+
+release:
+  prerelease: auto
+
+universal_binaries:
+  - replace: true
+
+brews:
+  -
+    name: whattp
+    homepage: "https://github.com/valxntine/whattp"
+    tap:
+      owner: valxntine
+      name: homebrew-valxntine
+    commit_author:
+      name: valxntine
+      email: valentinebott@gmail.com
+
+checksum:
+  name_template: 'checksums.txt'
