@@ -20,6 +20,8 @@ Then install `whattp`:
 ## Usage
 
 Using `whattp` is a breeze, just use the HTTP status code you're interested in as the first and only argument to the command, for example:
-`whattp 404`
+`whattp 500`
 
 And you'll be greeted with an output explaining what that status code means.
+
+![whattpexample](/doc/static/whattpexample.png)
