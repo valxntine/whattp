@@ -17,6 +17,10 @@ To install `whattp` first tap the repo:
 Then install `whattp`:  
 `brew install whattp`
 
+Alternatively, if you have Go installed you can install `whattp` using `go install`
+
+`go install github.com/valxntine/whattp@latest`
+
 ## Usage
 
 Using `whattp` is a breeze, just use the HTTP status code you're interested in as the first and only argument to the command, for example:
